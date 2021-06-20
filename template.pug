@@ -1,0 +1,22 @@
+doctype html
+head
+    meta(charset='utf-8')
+    title StarWars
+    meta(name='description' content='')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    link(rel='stylesheet' href='css/main.css')
+    link(rel='preconnect' href='https://fonts.gstatic.com')
+    link(href='https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap' rel='stylesheet')
+
+    html
+    body
+    .app-wrapper
+        img.logo(alt='logo' src='img/stars.png')
+        .buttons.navButtons
+            a(href="/movies.pug")#movies.navButton.route movies
+            a(href="/characters.pug")#characters.navButton.route characters
+            a(href="/planets.pug")#planets.navButton.route planets
+            a(href="/ships.pug")#ships.navButton.route ships
+        .contentWrapper
+
+            script(src='js/init.js')

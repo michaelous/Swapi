@@ -1,0 +1,25 @@
+{
+  "name": "Swapi",
+  "version": "0.0.1",
+  "description": "",
+  "homepage": ".",
+  "license": "",
+  "author": "",
+  "scripts": {
+    "start:dev": "parcel index.pug",
+    "dev": "parcel index.pug",
+    "build": "parcel build index.pug --public-url ./",
+    "deploy": "rm -rf dist/ && npm run build && gh-pages -d dist"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.1.17",
+    "parcel-bundler": "^1.12.4",
+    "pug": "^3.0.2"
+  },
+  "dependencies": {
+    "core-js": "^3.14.0",
+    "gh-pages": "^3.2.2",
+    "regenerator-runtime": "^0.13.7",
+    "sass": "^1.34.1"
+  }
+}
